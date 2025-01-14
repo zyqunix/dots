@@ -1,0 +1,32 @@
+# /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
+# Sourcing external config files
+
+# Default Configs
+$configs = $HOME/.config/hypr/configs
+
+source=$configs/Settings.conf
+source=$configs/Keybinds.conf
+
+# User Configs
+$UserConfigs = $HOME/.config/hypr/UserConfigs
+
+source= $UserConfigs/Startup_Apps.conf
+source= $UserConfigs/ENVariables.conf
+source= $UserConfigs/Monitors.conf
+source= $UserConfigs/Laptops.conf
+source= $UserConfigs/LaptopDisplay.conf
+source= $UserConfigs/WindowRules.conf
+source= $UserConfigs/UserDecorAnimations.conf
+source= $UserConfigs/UserKeybinds.conf
+source= $UserConfigs/UserSettings.conf
+source= $UserConfigs/WorkspaceRules.conf
+
+exec-once = hyprctl setcursor 'Bibata-Original-Ice' 18
+
+exec-once = gsettings set org.gnome.desktop.interface cursor-size 16
+exec-once = gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
+
+env = XCURSOR_THEME,Bibata-Original-Ice
+env = XCURSOR_SIZE,18
+env = HYPRCURSOR_THEME,Bibata-Original-Ice
+env = HYPRCURSOR_SIZE,18
